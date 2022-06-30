@@ -9,40 +9,39 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         /* start of variables */
 
-            // integer
-                // var variables can be changed
+        // integer
+        // var variables can be changed
         var a = 5
         var b = 10
 
-                // val variables can not changed
+        // val variables can not changed
         val nChanged = 6
         val x = 15
 
         var myInteger : Int = 5
         myInteger = 18
 
-            // Long 2^31 >
+        // Long 2^31 >
         var myLong : Long = 100
 
-            // Double && Float
+        // Double && Float
         val pi = 3.14
         val floatPi : Float = 3.14f
         val doublePi : Double = 3.14
 
-            // String
+        // String
         val myString = "New Text"
 
         val name = "Ahmet"
         val surname = "Yigit"
         val fullName = "$name $surname"
 
-            // Boolean
+        // Boolean
         val myBoolean = true
 
-            // casting
+        // casting
         val ten = 10
         val tenLong = ten.toLong()
 
@@ -72,31 +71,31 @@ class MainActivity : AppCompatActivity() {
         /* lists */
         val cList = arrayListOf<String>()
 
-            /* adding element */
+        /* adding element */
         cList.add("mens1s")
         //println(cList)
 
-            /* mixed list */
+        /* mixed list */
         val mixList = arrayListOf<Any>()
         mixList.add(2)
         mixList.add("two")
         //println(mixList)
 
-            /* java inheritance */
+        /* java inheritance */
         val intArrayList = ArrayList<Int>()
         intArrayList.add(1)
         //println(intArrayList)
         /* end of lists */
 
         /* set */
-            /* unique variables list */
+        /* unique variables list */
         val exArr = arrayOf(7,8,9,9,9,8,10)
         println("index 2 : ${exArr[2]} index 3 : ${exArr[3]} size : ${exArr.size}")
 
         val setArr = setOf<Int>(7,8,9,9,9,8,10)
         println("size : ${setArr.size} Numbers : ")
 
-            // forEach
+        // forEach
         setArr.forEach {
             println(it)
         }
@@ -113,7 +112,7 @@ class MainActivity : AppCompatActivity() {
         /* end of set */
 
         /* map */
-            /* dict :D */
+        /* dict :D */
 
         val foodCalMap = hashMapOf<String, Int>()
         foodCalMap.put("Apple", 100)
@@ -133,7 +132,7 @@ class MainActivity : AppCompatActivity() {
         /* conditional statements */
 
         val score = 10
-            /* if statements */
+        /* if statements */
         if (score < 10)
             println("Lose the game")
         else if (score < 20)
@@ -141,7 +140,7 @@ class MainActivity : AppCompatActivity() {
         else
             println("YEAH you did it!")
 
-            /* when statements */
+        /* when statements */
 
         var not = 0
         var notText = ""
@@ -167,25 +166,24 @@ class MainActivity : AppCompatActivity() {
 
         /* loops */
         val otherInt = arrayOf(5,10,15,20,25,30)
-            /* for loop */
+        /* for loop */
         for (a in otherInt.indices){
             otherInt[a] /= 5
         }
         for (b in otherInt){
             println(b)
         }
-            /*   forEach loop */
+        /*   forEach loop */
         otherInt.forEach { println(it) }
 
-            /* while loop */
+        /* while loop */
         var j = 0
         while (j < 10){
             println(j)
             j++
         }
 
+
+
     }
-
-
-
 }
